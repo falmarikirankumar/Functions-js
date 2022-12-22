@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1 align="center">
+      JavaScript Questions
+      <br />
+      Functions
+    </h1>
+    <div class="box">
+      <h2>
+        1. Create one function with zero parameter having a console statement.
+      </h2>
+      <pre>
+    const Demo = () => {
+      console.log("Hello");
+    }
+    Demo();
+    </pre
+      >
+    </div>
+    <div class="box">
+      <h2>
+        2. Create one function which takes two values as a parameter and print
+        the sum of them as "Sum of 3, 4 is 7".
+      </h2>
+      <pre>
+    function sum(a, b) {
+      total = a + b;
+      console.log(`Sum of ${a}, ${b} is ${total}`);
+    }
+    sum(3, 4);</pre
+      >
+    </div>
+    <div class="box">
+      <h2>3. Create one arrow function.</h2>
+      <pre>
+    const mul = (a, b) => {
+      total = a * b;
+      console.log(`Multiplication of ${a}, ${b} is ${total}`);
+    };
+    mul(3, 4);</pre
+      >
+    </div>
+    <div class="box">
+      <h2>
+        4. "Print output: var x = 21; var girl = function () { console.log(x);
+        var x = 20; }; girl ();"
+      </h2>
+      <pre>Undefined</pre>
+    </div>
+    <div class="box">
+      <h2>
+        5. "Print output: var x = 21; girl (); console.log(x) function girl() {
+        console.log(x); var x = 20; }; ".
+      </h2>
+      <pre>
+undefined
+   21</pre
+      >
+    </div>
+    <div class="box">
+      <h2>
+        6. "Print output var x = 21; a(); b(); function a() { x = 20;
+        console.log(x); }; function b() { x = 40; console.log(x);};"
+      </h2>
+      <pre>
+20
+40</pre
+      >
+    </div>
+    <div class="box">
+      <h2>
+        7. Write a function that accepts parameter n and returns factorial of n
+      </h2>
+      <pre>
+    const fact = (n) => {
+      let total = 1;
+      for (let i = 1; i <= n; i++) {
+        total *= i;
+      }
+      return total;
+    };
+
+    console.log(fact(5));
+      </pre>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
